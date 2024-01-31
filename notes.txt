@@ -1,0 +1,25 @@
+                        Array 16th vdo
+                            NOTES   
+
+                int arr[6]; OR int arr[] = new int[6]
+
+1. global array will be initialized with 0
+    & local array will contain garbage value
+
+2. max size of array - 10^6 locally & 10^7 globally
+
+3. BRUTE -> BETTER -> OPTIMAL
+
+Q-1  Largest Element in the Array
+
+    BRUTE : (sort) -> n-1th Element                             T.C = (nlogn) S.C = (1)
+
+    OPTIMAL: for loop chalado array p to find largest           T.C = (n) S.C = (1)
+    
+Q-2 2nd Largest Element in the Array
+
+    BRUTE : (sort) -> n-2th Element                                      T.C = (nlogn) S.C = (1)
+
+    BETTER: for loop chalado array p to find slargest != largest        T.C = (2n) S.C = (1)
+    
+    OPTIMAL: for loop chalo smallest & largest ko let krlo and then compare krte chalo  T.C = (n) S.C = (1)
