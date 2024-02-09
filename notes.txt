@@ -48,3 +48,17 @@ Q-6 Rotate array By D place
     OPTIMAL: rev(a,a+d),
              rev(a+d,a+n),
              rev(a, a+n),                                T.C = (2n) S.C = (1)
+
+Q-7 Move Zero's to End
+
+    BRUTE :  non zeros(NZ) ko alag array m store krlo
+             0-NZ tk original aray m dalo
+             NZ-arr.size tk 0 bhardo                     T.C = (2n) S.C = (n)                                
+
+    OPTIMAL: 2 pointer approach 
+             1st pointer - 1st 0 p 
+             2nd pointer ko iterate kro if != swap       T.C = (n) S.C = (1)
+
+Q-8 Linear Search
+
+    OPTIMAL: T.C = (n) S.C = (1)
