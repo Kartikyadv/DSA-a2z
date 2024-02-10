@@ -62,3 +62,17 @@ Q-7 Move Zero's to End
 Q-8 Linear Search
 
     OPTIMAL: T.C = (n) S.C = (1)
+
+Q-9 Merge 2 Sorted Array
+
+    BRUTE :  set m dalke aray return krdo                T.C = (n1logn + n2logn) + (n1+n2) S.C = (n1+n2)                                
+
+    OPTIMAL: 2 pointer approach 
+            i ko a p chalado
+            j ko b p chalado till i<a.size() && j<b.size()  T.C = (n1+n2) S.C = (n1+n2)
+
+Q-9 Intersection Of Two Sorted Arrays
+
+    OPTIMAL: 2 pointer approach 
+            i ko a p chalado
+            j ko b p chalado till i<a.size() && j<b.size()  T.C = (n1+n2) S.C = (n1+n2)
