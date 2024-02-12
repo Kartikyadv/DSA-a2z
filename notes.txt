@@ -71,8 +71,20 @@ Q-9 Merge 2 Sorted Array
             i ko a p chalado
             j ko b p chalado till i<a.size() && j<b.size()  T.C = (n1+n2) S.C = (n1+n2)
 
-Q-9 Intersection Of Two Sorted Arrays
+Q-10 Intersection Of Two Sorted Arrays
 
     OPTIMAL: 2 pointer approach 
             i ko a p chalado
             j ko b p chalado till i<a.size() && j<b.size()  T.C = (n1+n2) S.C = (n1+n2)
+
+Q-11 Missing Number
+
+    BRUTE : linear Search                                      T.C = (n^2) S.C = (1)
+
+    BETTER: using hashing                                      T.C = (n) S.C = (n)
+    
+    OPTIMAL: sum OR < xor  T.C = (n) S.C = (1)
+
+Q-12 Maximum Consecutive Ones
+
+    OPTIMAL: for loop chalado normal if else lgake max ko -1 let krke   T.C = (n1+n2) S.C = (n1+n2)
