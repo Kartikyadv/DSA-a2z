@@ -88,3 +88,19 @@ Q-11 Missing Number
 Q-12 Maximum Consecutive Ones
 
     OPTIMAL: for loop chalado normal if else lgake max ko -1 let krke   T.C = (n1+n2) S.C = (n1+n2)
+
+Q-13 Find The Single Element
+
+    BRUTE : linear Search                                      T.C = (n^2) S.C = (1)
+
+    BETTER: using hashing     OR mapping                       T.C = (3n) S.C = (max)
+    
+    OPTIMAL:  xor                                               T.C = (n) S.C = (1)
+
+Q-14 Longest Subarray With Sum K
+
+    BRUTE : generate all Subarray with sum k & take longest length     T.C = (n^2) S.C = (1)
+
+    BETTER: samaj nahi aya                       T.C = () S.C = ()
+    
+    OPTIMAL:  2 pointer approach || window logic                       T.C = (2n) S.C = (1)
