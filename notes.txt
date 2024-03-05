@@ -104,3 +104,62 @@ Q-14 Longest Subarray With Sum K
     BETTER: samaj nahi aya                       T.C = () S.C = ()
     
     OPTIMAL:  2 pointer approach || window logic                       T.C = (2n) S.C = (1)
+
+Q-15 Two Sum
+
+    BRUTE : check for every ele by for loop                  T.C = (n^2) S.C = (1)
+
+    BETTER: hashing to find target-arr[i]                    T.C = (n) S.C = (n)
+    
+    OPTIMAL:  2 pointer approach || window logic                       T.C = (2n) S.C = (1)
+
+Q-16 Sort an array of 0's 1's and 2's
+
+    BRUTE : .sort()                                      T.C = (n^2) S.C = (1)
+
+    BETTER: count_0, count_1, count_2                    T.C = (n) S.C = (n)
+    
+    OPTIMAL:  3 pointer approach || window logic || DNF ALGO         T.C = (2n) S.C = (1)
+
+    while (mid <= high) {
+        if (arr[mid] == 0) {
+            swap(arr[low], arr[mid]);
+            low++;
+            mid++;
+        }
+        else if (arr[mid] == 1) {
+            mid++;
+        }
+        else {
+            swap(arr[mid], arr[high]);
+            high--;
+        }
+    }
+
+Q-17 Majority Element (>n/2 times)
+
+    BRUTE : count for each ele                                      T.C = (n^2) S.C = (1)
+
+    BETTER: hash mapping                    T.C = (n) S.C = (n)
+    
+    OPTIMAL:  MOORE VOTING ALGO         T.C = (2n) S.C = (1)
+    {
+        for(int i=0;i<n;i++){
+		if(cnt == 0){
+			cnt = 1;
+			ele = v[i];
+		}
+		else if (v[i] == ele) cnt++;
+		else cnt--;
+	    }
+        int cnt1=0;
+        for(int i=0;i<n;i++){
+            if (v[i] == ele) {
+                    cnt1++;
+            }
+        }
+        if(cnt1>(n/2)){
+            return ele;
+        }
+    }
+
