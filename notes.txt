@@ -163,3 +163,21 @@ Q-17 Majority Element (>n/2 times)
         }
     }
 
+Q-18 Maximum Subarray Sum
+
+    BRUTE : forLOOP * 3                  T.C = (n^3) S.C = (1)
+
+    BETTER: forLOOP * 2                    T.C = (n^2) S.C = (1)
+    
+    OPTIMAL:  Kadane's Algo                       T.C = (n) S.C = (1)
+        for(int i=0;i<n;i++){
+            sum += a[i];
+
+            maxSum = max(sum,maxSum);
+
+            if(sum < 0){
+                sum = 0;
+            }
+        }
+        if(maxSum < 0) return 0;
+        return maxSum;
