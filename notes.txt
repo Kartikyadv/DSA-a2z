@@ -181,3 +181,16 @@ Q-18 Maximum Subarray Sum
         }
         if(maxSum < 0) return 0;
         return maxSum;
+      
+Q-19 Stock Buy And Sell
+
+    BRUTE : forLOOP*2                             T.C = (n^2) S.C = (1)
+
+    OPTIMAL: forLOOP                              T.C = (n) S.C = (1)
+       
+Q-20 Rearrange Array Elements by Sign
+
+    BRUTE : take pos and neg diff. aray and rejoin it               T.C = (n^2) S.C = (1)
+
+    OPTIMAL: ans vector leke posLoc += 2 aur negLoc += 2 krte chalo acc. to condition            T.C = (n) S.C = (n)
+  
